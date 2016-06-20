@@ -2,11 +2,13 @@
 
 rclone=/Users/dongwei/Documents/Projects/gocode/bin/rclone
 
-LOCAL_PHOTOS=/Users/dongwei//Pictures/Photos/
+LOCAL_PHOTOS=/Users/dongwei/Pictures/Photos/
 REMOTE_PHOTOS='remote:Photos/'
 
-$rclone sync $LOCAL_PHOTOS $REMOTE_PHOTOS
+## Sync is destructive and will it delete folders+files on remote
+## that is not on local. Dangerous :(
+# $rclone sync $LOCAL_PHOTOS $REMOTE_PHOTOS
 
-echo 'done'
+$rclone copy $LOCAL_PHOTOS $REMOTE_PHOTOS
 
 exit 0
