@@ -5,6 +5,7 @@
 	"fade_fold_buttons": false,
 	"font_face": "Consolas",
 	"font_size": 12,
+	"folder_exclude_patterns": [".svn", ".git", ".hg", "CVS", "node_modules", ".meteor/local"],
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
@@ -16,6 +17,7 @@
 	"rulers":
 	[
 		80,
+		100,
 		120
 	],
 	"shift_tab_unindent": true,
@@ -24,5 +26,5 @@
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"word_wrap": "auto",
-	"wrap_width": 80
+	"wrap_width": 120,
 }
