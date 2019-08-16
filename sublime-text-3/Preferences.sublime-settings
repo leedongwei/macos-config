@@ -3,9 +3,17 @@
 	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
 	"ensure_newline_at_eof_on_save": true,
 	"fade_fold_buttons": false,
+	"folder_exclude_patterns":
+	[
+		".svn",
+		".git",
+		".hg",
+		"CVS",
+		"node_modules",
+		".meteor/local"
+	],
 	"font_face": "Consolas",
 	"font_size": 12,
-	"folder_exclude_patterns": [".svn", ".git", ".hg", "CVS", "node_modules", ".meteor/local"],
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
@@ -26,5 +34,5 @@
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"word_wrap": "auto",
-	"wrap_width": 120,
+	"wrap_width": 120
 }
