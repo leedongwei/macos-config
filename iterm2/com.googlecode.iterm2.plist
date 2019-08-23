@@ -569,15 +569,15 @@
 	<key>NSWindow Frame SUAutomaticUpdateAlert</key>
 	<string>336 1462 616 174 -636 800 2560 1057 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
-	<string>431 1496 400 129 -649 800 2560 1057 </string>
+	<string>-364 1827 400 129 -461 1050 2560 1417 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>492 1564 620 392 -461 1050 2560 1417 </string>
+	<string>509 1818 620 392 -461 1050 2560 1417 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>-367 926 606 469 -636 800 2560 1057 </string>
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>-364 1109 796 486 -636 800 2560 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>-461 1140 570 1327 -461 1050 2560 1417 </string>
+	<string>-461 1072 570 1394 -461 1050 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>-613 846 570 942 -649 800 2560 1057 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -1003,9 +1003,9 @@
 				<key>0xf702-0x280000</key>
 				<dict>
 					<key>Action</key>
-					<integer>11</integer>
+					<integer>10</integer>
 					<key>Text</key>
-					<string>0x1b 0x1b 0x5b 0x44</string>
+					<string>b</string>
 				</dict>
 				<key>0xf703-0x220000</key>
 				<dict>
@@ -1031,9 +1031,9 @@
 				<key>0xf703-0x280000</key>
 				<dict>
 					<key>Action</key>
-					<integer>11</integer>
+					<integer>10</integer>
 					<key>Text</key>
-					<string>0x1b 0x1b 0x5b 0x43</string>
+					<string>f</string>
 				</dict>
 				<key>0xf704-0x20000</key>
 				<dict>
@@ -1170,11 +1170,11 @@
 			<key>Name</key>
 			<string>leedongwei</string>
 			<key>Non Ascii Font</key>
-			<string>Consolas 12</string>
+			<string>Menlo-Regular 11</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>Consolas 12</string>
+			<string>Menlo-Regular 11</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -1193,21 +1193,29 @@
 			<true/>
 			<key>Selected Text Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.55732053518295288</real>
+				<real>0.60392156862745094</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.56244754791259766</real>
+				<real>0.46666666666666667</real>
 				<key>Red Component</key>
-				<real>0.47797361016273499</real>
+				<real>0.0</real>
 			</dict>
 			<key>Selection Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.28167051076889038</real>
-				<key>Green Component</key>
-				<real>0.21576285362243652</real>
-				<key>Red Component</key>
 				<real>0.0</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
+				<key>Green Component</key>
+				<real>1</real>
+				<key>Red Component</key>
+				<real>1</real>
 			</dict>
 			<key>Semantic History</key>
 			<dict>
@@ -1533,11 +1541,12 @@
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
-		<string>3.3.0beta11</string>
+		<string>3.3.2beta2</string>
+		<string>3.3.0beta8</string>
 		<string>3.3.0beta13</string>
 		<string>3.3.1</string>
 		<string>3.3.0beta15</string>
-		<string>3.3.0beta8</string>
+		<string>3.3.0beta11</string>
 	</array>
 	<key>NoSyncDoNotWarnBeforeMultilinePaste</key>
 	<true/>
@@ -1548,7 +1557,7 @@
 		<key>screenFrame</key>
 		<string>{{-461, 1050}, {2560, 1440}}</string>
 		<key>topLeft</key>
-		<string>{-190, 1797}</string>
+		<string>{-461, 2087}</string>
 	</dict>
 	<key>NoSyncHaveUsedCopyMode</key>
 	<true/>
@@ -1557,7 +1566,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>501269274.96421403</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>36</integer>
+	<integer>39</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2022,6 +2031,14 @@
 				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
+				<string>number</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
 				<string>currentTab.currentSession.hostname</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
@@ -2274,6 +2291,12 @@
 			</dict>
 		</array>
 	</dict>
+	<key>NoSyncSearchHistory</key>
+	<array>
+		<string>/organizations</string>
+		<string>003440</string>
+		<string>/organizations/123/releases/</string>
+	</array>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>496410014.82314801</real>
 	<key>NoSyncTimeOfLastPromo</key>
@@ -2354,7 +2377,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-08-13T17:39:28Z</date>
+	<date>2019-08-16T20:39:07Z</date>
 	<key>SUUpdateRelaunchingMarker</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -2410,7 +2433,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.3.1</string>
+	<string>3.3.2beta2</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
