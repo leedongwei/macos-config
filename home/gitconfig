@@ -23,8 +23,8 @@
 
 [user]
   name = Danny Lee
-  email = danny@dongwei.li
-  signingkey = 9220DE3141D18262
+  email = dlee@sentry.io
+  signingkey = 2D790911B692E3A9
 [credential]
   helper = osxkeychain
 [commit]
