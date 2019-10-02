@@ -30,7 +30,8 @@
 
 [user]
 	name = Danny Lee
-	email = leedongwei@gmail.com
+	email = danny@dongwei.li
+	signingkey = 9220DE3141D18262
 [credential]
 	helper = osxkeychain
 [filter "lfs"]
@@ -40,3 +41,5 @@
 [core]
 	excludesfile = ~/.gitignore_global
 	editor = /usr/bin/vim
+[commit]
+	gpgsign = true
