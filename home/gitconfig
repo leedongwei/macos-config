@@ -1,13 +1,13 @@
 [alias]
-  # Show verbose output about tags, branches or remotes
-  tags = tag -l
-  branches = branch -a
-  remotes = remote -v
-  # Pretty log output
-  hist = log --graph --pretty=format:'%Cred%h%Creset %s%C(yellow)%d%Creset %Cgreen(%cr)%Creset [%an]' --abbrev-commit --date=relative
+  br = branch
+  co = checkout
+  cm = commit
+  df = diff
+  lg = log
+  st = status
+
 
 [color]
-  # Use colors in Git commands that are capable of colored output when outputting to the terminal
 	ui = true
 [color "branch"]
   current = yellow reverse
@@ -34,12 +34,14 @@
 	signingkey = 9220DE3141D18262
 [credential]
 	helper = osxkeychain
+[commit]
+  gpgsign = true
+[gpg]
+  program = gpg
+[core]
+  excludesfile = ~/.gitignore_global
+  editor = /usr/bin/vim
 [filter "lfs"]
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
 	required = true
-[core]
-	excludesfile = ~/.gitignore_global
-	editor = /usr/bin/vim
-[commit]
-	gpgsign = true

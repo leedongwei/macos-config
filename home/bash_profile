@@ -11,4 +11,5 @@ source ~/.bashrc
 # export PATH=$PATH:$ANDROID_HOME/platform-tools
 # export PATH="$HOME/.fastlane/bin:$PATH"
 
+export GPG_TTY=$(tty)
 export PATH

@@ -1,7 +1,7 @@
 {
   "editor.fontFamily": "Consolas, Menlo, monospace",
     "editor.tabSize": 2,
-    "editor.tabCompletion": true,
+    "editor.tabCompletion": "on",
     "editor.minimap.enabled": false,
     "editor.minimap.showSlider": "always",
     "editor.minimap.renderCharacters": false,
