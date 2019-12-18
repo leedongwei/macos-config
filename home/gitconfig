@@ -5,10 +5,12 @@
   df = diff
   lg = log
   st = status
-
+  ignore = update-index --assume-unchanged
+  unignore = update-index --no-assume-unchanged
+  ignored = !git ls-files -v | grep "^[[:lower:]]"
 
 [color]
-	ui = true
+  ui = true
 [color "branch"]
   current = yellow reverse
   local = yellow
@@ -29,11 +31,11 @@
   merge = refs/heads/master
 
 [user]
-	name = Danny Lee
-	email = danny@dongwei.li
-	signingkey = 9220DE3141D18262
+  name = Danny Lee
+  email = danny@dongwei.li
+  signingkey = 9220DE3141D18262
 [credential]
-	helper = osxkeychain
+  helper = osxkeychain
 [commit]
   gpgsign = true
 [gpg]
@@ -42,6 +44,6 @@
   excludesfile = ~/.gitignore_global
   editor = /usr/bin/vim
 [filter "lfs"]
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
-	required = true
+  clean = git-lfs clean %f
+  smudge = git-lfs smudge %f
+  required = true
