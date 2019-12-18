@@ -1,29 +1,18 @@
 [alias]
+  aa = add --all
   br = branch
   co = checkout
+  cp = cherry-pick
   cm = commit
   df = diff
+  dfc = diff --cached
   lg = log
-  st = status
+  rb = rebase -i
+  rbm = rebase -i master
+  st = status -sb
   ignore = update-index --assume-unchanged
   unignore = update-index --no-assume-unchanged
   ignored = !git ls-files -v | grep "^[[:lower:]]"
-
-[color]
-  ui = true
-[color "branch"]
-  current = yellow reverse
-  local = yellow
-  remote = green
-[color "diff"]
-  meta = yellow bold
-  frag = magenta bold
-  old = red bold
-  new = green bold
-[color "status"]
-  added = yellow
-  changed = green
-  untracked = cyan
 
 # Use `origin` as the default remote on the `master` branch in all cases
 [branch "master"]
@@ -47,3 +36,26 @@
   clean = git-lfs clean %f
   smudge = git-lfs smudge %f
   required = true
+
+[apply]
+  whitespace = strip
+[diff]
+  algorithm = patience
+[rerere]
+  enabled = 1
+
+[color]
+  ui = true
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
