@@ -1,0 +1,31 @@
+#!/bin/bash
+#
+# Open new Terminal tabs from the command line
+# https://gist.github.com/bobthecow/757788
+#
+# Usage:
+#   tab                   Opens the current directory in a new tab
+#   tab [PATH]            Open PATH in a new tab
+#   tab [CMD]             Open a new tab and execute CMD
+#   tab [PATH] [CMD] ...  You can probably guess
+
+function tab () {
+    local dir="$PWD"
+    local args="$@"
+
+    if [ -d "$1" ]; then
+        dir=`cd "$1"; pwd`
+        args="${@:2}"
+    fi
+
+    osascript -i <<EOF
+        tell application "iTerm2"
+                tell current window
+                        create tab with default profile
+                        tell the current session
+                                write text "cd \"$dir\" && $args"
+                        end tell
+                end tell
+        end tell
+EOF
+}
