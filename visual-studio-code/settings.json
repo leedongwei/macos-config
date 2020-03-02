@@ -19,8 +19,9 @@
         "**/.DS_Store": true,
         "**/node_modules": true,
         "node_modules": true,
-        "dist": true,
-        "build": true
+        "**/dist": true,
+        "**/build": true,
+        "**/*.pyc": true
     },
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
@@ -54,5 +55,20 @@
           "autoFix": true
         }
     ],
-    "eslint.packageManager": "yarn"
+    "eslint.packageManager": "yarn",
+    "python.formatting.blackPath": "/Users/leedongwei/.cache/pre-commit/repo5gALeD",
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.editor.showTabs": true,
+    "search.exclude": {
+      "**/build": true,
+      "**/dist": true,
+      "build": true,
+      "dist": true,
+      "node_modules": true
+    }
 }

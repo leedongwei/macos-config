@@ -10,6 +10,8 @@
 	<false/>
 	<key>AppleAntiAliasingThreshold</key>
 	<integer>1</integer>
+	<key>ApplePressAndHoldEnabled</key>
+	<false/>
 	<key>AppleScrollAnimationEnabled</key>
 	<integer>0</integer>
 	<key>AppleSmoothFixedFontsSizeThreshold</key>
@@ -571,15 +573,15 @@
 	<key>NSWindow Frame SUStatusFrame</key>
 	<string>-364 1827 400 129 -461 1050 2560 1417 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>509 1818 620 392 -461 1050 2560 1417 </string>
+	<string>527 1818 620 392 -443 1050 2560 1417 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>-367 926 606 469 -636 800 2560 1057 </string>
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>-364 1109 796 486 -636 800 2560 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>-461 1072 570 1394 -461 1050 2560 1417 </string>
+	<string>0 0 570 1027 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>-613 846 570 942 -649 800 2560 1057 </string>
+	<string>0 23 570 1004 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>40 27 710 750 0 0 1280 777 </string>
 	<key>New Bookmarks</key>
@@ -1541,12 +1543,7 @@
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
-		<string>3.3.2beta2</string>
-		<string>3.3.0beta8</string>
-		<string>3.3.0beta13</string>
-		<string>3.3.1</string>
-		<string>3.3.0beta15</string>
-		<string>3.3.0beta11</string>
+		<string>3.3.8beta4</string>
 	</array>
 	<key>NoSyncDoNotWarnBeforeMultilinePaste</key>
 	<true/>
@@ -1566,7 +1563,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>501269274.96421403</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>39</integer>
+	<integer>56</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2096,6 +2093,22 @@
 			</dict>
 			<dict>
 				<key>isTerminal</key>
+				<false/>
+				<key>name</key>
+				<string>title</string>
+				<key>nonterminalContext</key>
+				<integer>1</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
+				<string>title</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
 				<string>tmuxWindowTitle</string>
@@ -2291,12 +2304,6 @@
 			</dict>
 		</array>
 	</dict>
-	<key>NoSyncSearchHistory</key>
-	<array>
-		<string>/organizations</string>
-		<string>003440</string>
-		<string>/organizations/123/releases/</string>
-	</array>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>496410014.82314801</real>
 	<key>NoSyncTimeOfLastPromo</key>
@@ -2377,9 +2384,11 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-08-16T20:39:07Z</date>
+	<date>2020-02-11T17:31:17Z</date>
+	<key>SUUpdateGroupIdentifier</key>
+	<integer>1334976827</integer>
 	<key>SUUpdateRelaunchingMarker</key>
-	<false/>
+	<true/>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -2433,7 +2442,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.3.2beta2</string>
+	<string>3.3.8beta5</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
