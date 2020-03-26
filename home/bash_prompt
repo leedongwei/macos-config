@@ -61,6 +61,17 @@ prompt_git() {
   fi;
 }
 
+prompt_command() {
+  local short_pwd="${PWD##*/}"
+  local attr=""
+
+  [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ] && attr="${attr}[☳]"
+  [ -n "$VIRTUAL_ENV" ] && attr="${attr}[🐍]"
+
+  echo -e "${attr}"
+}
+
+
 if tput setaf 1 &> /dev/null; then
   tput sgr0; # reset colors
   bold=$(tput bold);
@@ -114,6 +125,7 @@ PS1+="\[${userStyle}\]\u"; # username
 PS1+="\[${white}\] in ";
 PS1+="\[${green}\]\w"; # working directory full path
 PS1+="\$(prompt_git \"\[${white}\] on \[${violet}\]\" \"\[${blue}\]\")"; # Git repository details
+PS1+="\$(prompt_command \"\[${blue}\]\")"; # Show SSH/venv
 PS1+="\n";
 PS1+="\[${white}\]\$ \[${reset}\]"; # `$` (and reset color)
 export PS1;
