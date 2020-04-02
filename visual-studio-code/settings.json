@@ -56,7 +56,6 @@
         }
     ],
     "eslint.packageManager": "yarn",
-    "python.formatting.blackPath": "/Users/leedongwei/.cache/pre-commit/repo5gALeD",
     "[javascript]": {
       "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
@@ -70,5 +69,8 @@
       "build": true,
       "dist": true,
       "node_modules": true
-    }
+    },
+    "python.formatting.provider": "black",
+    "python.pythonPath": "./.venv/bin/python",
+    "python.linting.pylintPath": "./.venv/bin/pylint"
 }
