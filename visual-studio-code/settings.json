@@ -72,5 +72,8 @@
     },
     "python.formatting.provider": "black",
     "python.pythonPath": "./.venv/bin/python",
-    "python.linting.pylintPath": "./.venv/bin/pylint"
+    "python.linting.pylintPath": "./.venv/bin/pylint",
+    "terminal.integrated.shellArgs.windows": null,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "git.autofetch": true
 }
