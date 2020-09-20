@@ -31,8 +31,4 @@ eval "$(pyenv init -)"
 # For direnv
 eval "$(direnv hook bash)"
 
-# Set `python` to python3
-alias python=/usr/local/opt/python/bin/python3
-alias pip=/usr/local/opt/python/bin/pip3
-
 export PATH

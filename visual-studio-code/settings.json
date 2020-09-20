@@ -75,5 +75,6 @@
     "python.linting.pylintPath": "./.venv/bin/pylint",
     "terminal.integrated.shellArgs.windows": null,
     "diffEditor.ignoreTrimWhitespace": false,
-    "git.autofetch": true
+    "git.autofetch": true,
+    "editor.formatOnSave": true
 }
