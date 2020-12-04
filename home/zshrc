@@ -121,3 +121,17 @@ bindkey "^[e" end-of-line
 # Sentry
 alias sensen="sentry devserver --workers"
 alias gengen="getsentry devserver --workers"
+
+# Virtualenvwrapper things
+export PYENV_ROOT="${HOME}/.pyenv"
+
+if [ -d "${PYENV_ROOT}" ]; then
+    export PATH="${PYENV_ROOT}/bin:${PATH}"
+    eval "$(pyenv init -)"
+fi
+export PATH
+
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Devel
+export VIRTUALENVWRAPPER_SCRIPT=/usr/local/bin/virtualenvwrapper.sh
+source /usr/local/bin/virtualenvwrapper_lazy.sh

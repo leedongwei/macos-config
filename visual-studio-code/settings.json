@@ -86,6 +86,6 @@
     "terminal.integrated.cursorStyle": "line",
     "workbench.colorTheme": "SynthWave '84",
     "rust-analyzer.cargo.allFeatures": true,
-    "editor.formatOnSave": true,
-    "window.zoomLevel": 0
+    "editor.formatOnSave": true
 }
+>>>>>>> Stashed changes
