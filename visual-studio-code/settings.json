@@ -1,85 +1,91 @@
 {
   "editor.fontFamily": "Consolas, Menlo, monospace",
-  "editor.tabSize": 2,
-  "editor.tabCompletion": "on",
-  "editor.minimap.enabled": false,
-  "editor.minimap.showSlider": "always",
-  "editor.minimap.renderCharacters": false,
-  "editor.minimap.maxColumn": 100,
-  "editor.renderControlCharacters": false,
-  "editor.renderWhitespace": "all",
-  "editor.rulers": [80, 100, 120],
-  "editor.scrollBeyondLastLine": false,
-  "editor.wordWrap": "off",
-  "files.exclude": {
-    "**/.git": true,
-    "**/.svn": true,
-    "**/.hg": true,
-    "**/CVS": true,
-    "**/.DS_Store": true,
-    "**/node_modules": true,
-    "node_modules": true,
-    "**/dist": true,
-    "**/build": true,
-    "**/*.pyc": true
-  },
-  "files.trimTrailingWhitespace": true,
-  "files.insertFinalNewline": true,
-  "files.trimFinalNewlines": true,
-
-  "problems.decorations.enabled": true,
-  "explorer.confirmDragAndDrop": false,
-  "emmet.triggerExpansionOnTab": true,
-  "npm.packageManager": "yarn",
-  "window.zoomLevel": 0,
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "emmet.syntaxProfiles": {
-    "javascript": "html"
-  },
-  "workbench.startupEditor": "welcomePage",
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "typescript.suggest.autoImports": false,
-  "files.useExperimentalFileWatcher": true,
-  "tslint.alwaysShowRuleFailuresAsWarnings": false,
-  "pasteAndIndent.selectAfter": true,
-  "eslint.alwaysShowStatus": true,
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    {
-      "language": "typescript",
-      "autoFix": true
+    "editor.tabSize": 2,
+    "editor.tabCompletion": "on",
+    "editor.minimap.enabled": false,
+    "editor.minimap.showSlider": "always",
+    "editor.minimap.renderCharacters": false,
+    "editor.minimap.maxColumn": 100,
+    "editor.renderControlCharacters": false,
+    "editor.renderWhitespace": "all",
+    "editor.rulers": [80, 100, 120],
+    "editor.scrollBeyondLastLine": false,
+    "editor.wordWrap": "off",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/node_modules": true,
+        "node_modules": true,
+        "**/dist": true,
+        "**/build": true,
+        "**/*.pyc": true
     },
-    {
-      "language": "typescriptreact",
-      "autoFix": true
-    }
-  ],
-  "eslint.packageManager": "yarn",
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "workbench.editor.showTabs": true,
-  "search.exclude": {
-    "**/build": true,
-    "**/dist": true,
-    "build": true,
-    "dist": true,
-    "node_modules": true
-  },
-  "python.formatting.provider": "black",
-  "python.pythonPath": "./.venv/bin/python",
-  "python.linting.pylintPath": "./.venv/bin/pylint",
-  "terminal.integrated.shellArgs.windows": null,
-  "diffEditor.ignoreTrimWhitespace": false,
-  "git.autofetch": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll": true,
-    "source.fixAll.eslint": true
-  }
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+
+    "problems.decorations.enabled": true,
+    "explorer.confirmDragAndDrop": false,
+    "emmet.triggerExpansionOnTab": true,
+    "npm.packageManager": "yarn",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "emmet.syntaxProfiles": {
+        "javascript": "html"
+    },
+    "workbench.startupEditor": "welcomePage",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "typescript.suggest.autoImports": false,
+    "files.useExperimentalFileWatcher": true,
+    "tslint.alwaysShowRuleFailuresAsWarnings": false,
+    "pasteAndIndent.selectAfter": true,
+    "eslint.alwaysShowStatus": true,
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        {
+          "language": "typescript",
+          "autoFix": true
+        },
+        {
+          "language": "typescriptreact",
+          "autoFix": true
+        }
+    ],
+    "eslint.packageManager": "yarn",
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.editor.showTabs": true,
+    "search.exclude": {
+      "**/build": true,
+      "**/dist": true,
+      "build": true,
+      "dist": true,
+      "node_modules": true
+    },
+    "python.formatting.provider": "black",
+    "python.pythonPath": "./.venv/bin/python",
+    "python.linting.pylintPath": "./.venv/bin/pylint",
+    "terminal.integrated.shellArgs.windows": null,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "git.autofetch": true,
+    "workbench.colorCustomizations": {},
+    "workbench.editorAssociations": [
+      {
+        "viewType": "jupyter.notebook.ipynb",
+        "filenamePattern": "*.ipynb"
+      }
+    ],
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "terminal.integrated.cursorStyle": "line",
+    "workbench.colorTheme": "SynthWave '84",
+    "rust-analyzer.cargo.allFeatures": true,
+    "editor.formatOnSave": true,
+    "window.zoomLevel": 0
 }
